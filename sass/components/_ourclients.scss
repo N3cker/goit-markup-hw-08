@@ -1,0 +1,45 @@
+.our-clients {
+    h2 {
+        text-align: center;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 92px;
+            width: 170px;
+            border: 1px solid $color-grey-icons;
+            border-radius: 4px;
+            position: relative;
+            transition: background-color .25s cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover {
+                border-color: $color-blue;
+
+                svg {
+                    fill: $color-blue;
+                }
+            }
+
+            a {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                left: 0;
+                top: 0;
+            }
+
+            svg {
+                fill: $color-grey-icons;
+                transition: fill .25s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+        }
+    }
+}
+

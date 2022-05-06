@@ -1,0 +1,20 @@
+.logo {
+    display: inline;
+    font-family: $logo-font;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.logo--black {
+    span {
+        color: $color-blue;
+    }
+}
+
+.logo--white {
+    color: $color-white;
+
+    span {
+        color: $color-blue;
+    }
+}

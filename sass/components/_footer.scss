@@ -1,0 +1,117 @@
+footer {
+    height: 250px;
+    background-color: $color-grey;
+    color: $color-white;
+
+    .footer-list {
+        display: flex;
+        
+        h4 {
+            margin-bottom: 20px;
+        }
+    }
+
+    a {
+        margin-top: 60px;
+    }
+    
+}
+
+.address-footer {
+    margin-right: 70px;
+
+    li {
+        padding-top: 15px;
+
+        p {
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+        }
+
+        a {
+            font-size: 14px;
+            font-style: normal;
+            color: var(--color-white);
+            color: #FFFFFF99;
+        }
+    }
+
+    li:first-child {
+        padding-top: 30px;
+    }
+}
+
+.footer-list {
+    .media-icons-list {
+        display: flex;
+
+        li {
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 44px;
+            height: 44px;
+            margin-right: 10px;
+            overflow: hidden;
+            transition: background-color .25s cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover {
+                background-color: $color-blue;
+            }
+
+            a {
+                display: flex;
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                justify-content: center;
+                align-items: center;
+
+                svg {
+                    fill: $color-white;
+                }
+            }
+        }
+    }
+}
+
+.newsletter {
+    margin-left: 78px;
+
+    &__form {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+
+        input {
+            background-color: $color-grey;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            height: 50px;
+            width: 358px;
+            padding-left: 16px;
+            color: $color-white;
+        }
+
+        button {
+            background-color: $color-blue;
+            color: $color-white;
+            height: 50px;
+            width: 200px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            svg {
+                fill: $color-white;
+            }
+        }
+    }
+}

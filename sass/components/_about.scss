@@ -1,0 +1,44 @@
+.about {
+    h2 {
+        text-align: center;
+        font-size: 36px;
+        padding-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            height: 294px;
+            width: 370px;
+
+            figure {
+                position: relative;
+                height: 294px;
+                overflow: hidden;
+
+                p {
+                    position: absolute;
+                    text-align: center;
+                    z-index: 10;
+                    bottom: -100px;
+                    background: rgba(47, 48, 58, 0.8);
+                    width: 100%;
+                    padding: 33px 0;
+                    color: $color-white;
+                    font-size: 14px;
+                    font-weight: bold;
+                    line-height: 16.41px;
+                    transition: bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                }
+            }
+
+            &:hover {
+                p {
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}

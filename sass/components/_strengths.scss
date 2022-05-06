@@ -1,0 +1,30 @@
+.strengths {
+    ul {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            figure {
+                background-color: $color-light;
+                padding: 25px 101.5px;
+                border-radius: 4px;
+                margin-bottom: 30px;
+                transition: border .25s cubic-bezier(0.4, 0, 0.2, 1);
+
+            }
+
+            h4 {
+                padding-bottom: 10px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            p {
+                line-height: 24px;
+                color: $color-light-grey;
+                font-size: 14px;
+                max-width: 260px;
+            }
+        }
+    }
+}
