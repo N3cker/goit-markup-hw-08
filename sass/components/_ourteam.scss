@@ -1,11 +1,18 @@
 .our-team {
     padding-top: 90px;
-    margin-top: 90px;
+    margin-top: 60px;
     background-color: $color-light;
 
     h2 {
         text-align: center;
         padding-bottom: 50px;
+    }
+
+    &__list {
+        flex-direction: column;
+        margin: 0 15px;
+        gap: 30px;
+        width: 450px;
     }
 
     ul {
@@ -17,6 +24,7 @@
             background: $color-white;
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             border-radius: 0px 0px 4px 4px;
+            height: 622px;
 
             h4 {
                 padding-top: 30px;
@@ -32,7 +40,7 @@
 .our-team {
     .media-icons-list {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         margin-bottom: 30px;
 
         li {

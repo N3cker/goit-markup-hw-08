@@ -9,11 +9,12 @@
     justify-content: center;
     align-items: center;
     transition: opacity .25s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0 25px;
 
     &__window {
         position: relative;
         height: 581px;
-        width: 528px;
+        max-width: 528px;
         background-color: $color-white;
         border-radius: 4px;
         padding: 40px;  

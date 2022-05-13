@@ -8,10 +8,6 @@ body {
     font-family: $main-font;
     color: $color-black;
 
-    header {
-        width: 100%;
-    }
-
     a {
         text-decoration: none;
         color: $color-black;
@@ -37,14 +33,14 @@ body {
     h2 {
         font-size: 36px;
     }
-
 }
 
 .is-hidden {
     opacity: 0;
     pointer-events: none;
 }
+
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }

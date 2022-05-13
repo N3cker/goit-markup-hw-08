@@ -17,31 +17,53 @@
 <body>
     <header>
         <div class="navbar-wrapper">
+
             <div class="navbar">
                 <a class="logo logo--black" href="/index.html"><span>Web</span>Studio</a>
-                <nav class="navigation">
-                    <ul class="navigation__list">
-                        <li><a href="/index.html">Agencja</a></li>
-                        <li class="navigation__active-page"><a href="/portfolio/">Portfolio</a></li>
-                        <li><a href="#">Kontakt</a></li>
-                    </ul>
-                </nav>
-                <ul class="navbar__contact-list">
-                    <li>
-                        <svg width="16" height="12">
-                            <use href="/images/icons.svg#icon-envelope"></use>
-                        </svg>
-                        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    </li>
-                    <li>
-                        <a href="tel:+48111111111">
-                            <svg width="10" height="16">
-                                <use href="/images/icons.svg#icon-smartphone"></use>
-                            </svg>
-                            +48 111 111 111
-                        </a>
-                    </li>
-                </ul>
+                <div class="navbar__menu is-hidden" data-menu>
+                    <button class="navbar__close-btn" data-menu-close>
+                        <div>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                    <nav class="navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__active-page"><a href="/index.html">Agencja</a></li>
+                            <li><a href="/portfolio/">Portfolio</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                        </ul>
+                    </nav>
+                    <div class="navbar__contact">
+                        <ul class="navbar__contact-list">
+                            <li>
+                                <svg width="16" height="12">
+                                    <use href="/images/icons.svg#icon-envelope"></use>
+                                </svg>
+                                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                            <li>
+                                <a href="tel:+48111111111">
+                                    <svg width="10" height="16">
+                                        <use href="/images/icons.svg#icon-smartphone"></use>
+                                    </svg>
+                                    +48 111 111 111
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar__media-list">
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Linkedin</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="navbar__burger" data-menu-open>
+                    <svg width="24" height="16">
+                        <use href="/images/icons.svg#icon-burger"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
@@ -58,7 +80,7 @@
                 <li>
                     <figure>
                         <div class="gallery-img">
-                            <img src="/images/laptop.jpg" width="370" height="294" alt="laptop">
+                            <img src="/images/laptop.jpg" width="450" height="294" alt="laptop">
                             <p class="gallery-img__description">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>    
                         </div>
                         <figcaption>
@@ -70,7 +92,7 @@
                 <li> 
                     <figure>
                         <div class="gallery-img">
-                            <img src="/images/basketballplayers.jpg" width="370" height="294" alt="basketball">
+                            <img src="/images/basketballplayers.jpg" width="450" height="294" alt="basketball">
                             <p class="gallery-img__description">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                         </div>
                     </figure>
@@ -82,7 +104,7 @@
                 <li>
                     <figure>
                         <div class="gallery-img">
-                            <img src="/images/theseafood.jpg" width="370" height="294" alt="the seafood restaurant">
+                            <img src="/images/theseafood.jpg" width="450" height="294" alt="the seafood restaurant">
                             <p class="gallery-img__description">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                         </div>
                     </figure>
@@ -94,7 +116,7 @@
                 <li>
                     <figure>
                         <div class="gallery-img">
-                            <img src="/images/headphones.jpg" width="370" height="294" alt="headphones">
+                            <img src="/images/headphones.jpg" width="450" height="294" alt="headphones">
                             <p class="gallery-img__description">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                         </div>
                     </figure>
@@ -106,7 +128,7 @@
                 <li>
                     <figure>
                         <div class="gallery-img">
-                            <img src="/images/boxes.jpg" width="370" height="294" alt="boxes">
+                            <img src="/images/boxes.jpg" width="450" height="294" alt="boxes">
                             <p class="gallery-img__description">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                         </div>
                     </figure>
@@ -118,7 +140,7 @@
                 <li>
                     <figure>
                         <div class="gallery-img">
-                            <img src="/images/mac.jpg" width="370" height="294" alt="mac">
+                            <img src="/images/mac.jpg" width="450" height="294" alt="mac">
                             <p class="gallery-img__description">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                         </div>
                     </figure>
@@ -130,7 +152,7 @@
                 <li>
                     <figure>
                         <div class="gallery-img">
-                            <img src="/images/book.jpg" width="370" height="294" alt="magazine">
+                            <img src="/images/book.jpg" width="450" height="294" alt="magazine">
                             <p class="gallery-img__description">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                         </div>
                     </figure>
@@ -142,7 +164,7 @@
                 <li>
                     <figure>
                         <div class="gallery-img">
-                            <img src="/images/label.jpg" width="370" height="294" alt="label tag">
+                            <img src="/images/label.jpg" width="450" height="294" alt="label tag">
                             <p class="gallery-img__description">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                         </div>
                     </figure>
@@ -154,7 +176,7 @@
                 <li>
                     <figure>
                         <div class="gallery-img">
-                            <img src="/images/laptop2.jpg" width="370" height="294" alt="laptop">
+                            <img src="/images/laptop2.jpg" width="450" height="294" alt="laptop">
                             <p class="gallery-img__description">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                         </div>
                     </figure>
@@ -233,5 +255,7 @@
             </ul>
         </div>
     </footer>
+
+    <script src="../js/mobile-menu.js"></script>
 </body>
 </html>

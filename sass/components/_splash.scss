@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 600px;
+    height: 400px;
     max-width: 1600px;
     background-image: url("/images/header-background.jpg");
     background-repeat: no-repeat;
@@ -26,8 +26,8 @@
     }
 
     h1 {
-        font-size: 44px;
-        max-width: 650px;
+        font-size: 26px;
+        max-width: 390px;
         letter-spacing: 0.06em;
         z-index: 2;
     }
