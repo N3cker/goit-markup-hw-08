@@ -13,11 +13,20 @@
         margin: 0 15px;
         gap: 30px;
         width: 450px;
+        display: flex;
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 0;
+            justify-content: space-around;
+        }
     }
 
     ul {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
 
         li {
             text-align: center;
@@ -25,6 +34,19 @@
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             border-radius: 0px 0px 4px 4px;
             height: 622px;
+
+
+            @media (min-width: 768px) and (max-width: 1199px) {
+                width: 350px;
+                height: 535px;
+            }
+
+                img {
+                    @media (min-width: 768px) and (max-width: 1199px) {
+                        width: 350px;
+                        height: 374px;
+                    }
+            }
 
             h4 {
                 padding-top: 30px;

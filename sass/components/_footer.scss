@@ -9,6 +9,12 @@ footer {
         justify-content: center;
         text-align: center;
         gap: 60px;
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
         
         h4 {
             margin-bottom: 20px;

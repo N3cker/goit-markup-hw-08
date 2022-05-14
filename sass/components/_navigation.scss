@@ -27,6 +27,16 @@
             justify-content: space-between;
             transition: opacity .25s cubic-bezier(0.4, 0, 0.2, 1);
 
+            @media (min-width: 768px) {
+                position: static;
+                background-color: transparent;
+                height: 80px;
+                flex-direction: row;
+                padding: 0;
+                align-items: center;
+                justify-content: space-between;
+            }
+
             .navbar__close-btn {
                 border: none;
                 position: absolute;
@@ -37,6 +47,10 @@
                 height: 50px;
                 background-color: transparent;
                 cursor: pointer;
+
+                @media (min-width: 768px) {
+                    display: none;
+                }
 
                 div {
                     position: relative;
@@ -74,6 +88,10 @@
             background-color: transparent;
             border: none;
 
+            @media (min-width: 768px) {
+                display: none;
+            }
+
             &:active {
                 svg {
                     fill: $color-blue;
@@ -87,18 +105,31 @@
             gap: 32px;
             margin-bottom: 64px;
 
+            @media (min-width:768px) {
+                gap: 10px;
+                margin: 0;
+            }
+
             li {
                 padding: 0 25px;
 
                 svg {
                     display: none;
                     transition: fill .25s cubic-bezier(0.4, 0, 0.2, 1);
+    
+                    @media (min-width: 768px) {
+                            display: inline-block;
+                    }
                 }
 
                 a {
                     font-size: 34px;
                     font-weight: 500;
                     transition: color .25s cubic-bezier(0.4, 0, 0.2, 1);
+
+                    @media (min-width:768px) {
+                        font-size: 14px;
+                    }
                 }
 
                 &:active, &:hover {
@@ -115,6 +146,10 @@
 
         &__media-list {
             display: flex;
+
+            @media (min-width: 768px) {
+                display: none;
+            }
 
             a {
                 font-size: 18px;
@@ -134,14 +169,31 @@
             
         .navigation {
             &__list {
+                display: flex;
+                flex-direction: column;
+
+                @media (min-width: 768px) {
+                    flex-direction: row;
+                    gap: 50px;
+                    padding-left: 80px; 
+                }
+
                 li {
                     padding: 0 23px;
                     margin-bottom: 36px; 
+
+                    @media (min-width:768px) {
+                        margin: 0;
+                    }
 
                     a {
                         font-weight: 500;
                         font-size: 40px;
                         transition: color .25s cubic-bezier(0.4, 0, 0.2, 1);
+
+                        @media (min-width: 768px) {
+                            font-size: 14px;
+                        }
                         
                         &:active, &:hover {
                             color: $color-blue;
@@ -154,15 +206,19 @@
                         color: $color-blue;
                     }
                     
-                    // &::after {
-                    //     content: "";
-                    //     position: absolute;
-                    //     bottom: -1px;
-                    //     display: block;
-                    //     height: 4px;
-                    //     width: 55px;
-                    //     background-color: $color-blue;
-                    // }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: -1px;
+                        display: none;
+                        height: 4px;
+                        width: 55px;
+                        background-color: $color-blue;
+        
+                        @media (min-width: 768px) {
+                            display: block; 
+                        }
+                    }
                 }
             }
         }
