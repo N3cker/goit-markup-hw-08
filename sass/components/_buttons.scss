@@ -32,6 +32,10 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     padding-bottom: 50px;
+
+    @media (min-width: 768px) {
+        justify-content: center;
+    }
     
     li {
         padding-left: 8px;
