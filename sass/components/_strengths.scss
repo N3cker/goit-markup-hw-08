@@ -12,6 +12,10 @@
             justify-content: space-around;
         }
 
+        @media (min-width: 1200px) {
+            flex-direction: row;
+        }
+
         li {
 
             margin-left: 15px;
@@ -23,6 +27,10 @@
                 width: 40%;
             }
 
+            @media (min-width: 1200px) {
+                text-align: left;
+            }
+
             figure {
                 display: flex;
                 align-items: center;
@@ -32,10 +40,6 @@
                 border-radius: 4px;
                 margin-bottom: 30px;
                 transition: border .25s cubic-bezier(0.4, 0, 0.2, 1);
-
-                // @media (min-width: 768px) and (max-width: 1199px) {
-                //     width: 354px;
-                // }
             }
 
             h4 {
@@ -57,6 +61,10 @@
                     text-align: left;
                     margin: 0;
                     max-width: 354px;
+                }
+
+                @media (min-width: 1200px) {
+                    text-align: left;
                 }
             }
         }

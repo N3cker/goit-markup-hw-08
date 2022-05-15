@@ -10,7 +10,7 @@
 
     &__list {
         flex-direction: column;
-        margin: 0 15px;
+        margin: 0 auto;
         gap: 30px;
         width: 450px;
         display: flex;
@@ -21,6 +21,11 @@
             width: 100%;
             margin: 0;
             justify-content: space-around;
+        }
+
+        @media (min-width: 1200px) {
+            flex-direction: row;
+            width: 100%;
         }
     }
 
@@ -41,11 +46,21 @@
                 height: 535px;
             }
 
-                img {
-                    @media (min-width: 768px) and (max-width: 1199px) {
-                        width: 350px;
-                        height: 374px;
-                    }
+            @media (min-width: 1200px) {
+                width: 270px;
+                height: 428px;
+            }
+
+            img {
+                @media (min-width: 768px) and (max-width: 1199px) {
+                width: 350px;
+                height: 374px;
+                }   
+
+                @media (min-width: 1200px) {
+                    width: 270px;
+                    height: 260px;
+                }
             }
 
             h4 {

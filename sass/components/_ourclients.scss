@@ -21,6 +21,10 @@
             margin: 15px;
             transition: background-color .25s cubic-bezier(0.4, 0, 0.2, 1);
 
+            @media (min-width: 1200px) {
+                width: 170px;
+            }
+
             &:active, &:hover {
                 border-color: $color-blue;
 

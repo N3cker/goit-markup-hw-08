@@ -15,6 +15,10 @@ footer {
             flex-wrap: wrap;
             justify-content: space-around;
         }
+
+        @media (min-width: 1200px) {
+            flex-direction: row;
+        }
         
         h4 {
             margin-bottom: 20px;
@@ -96,6 +100,10 @@ footer {
         align-items: center;
         gap: 10px;
 
+        @media (min-width: 1200px) {
+            flex-direction: row;
+        }
+
         input {
             background-color: $color-grey;
             border: 1px solid rgba(255, 255, 255, 0.3);
@@ -105,6 +113,11 @@ footer {
             padding-left: 16px;
             color: $color-white;
             margin-bottom: 20px;
+
+            @media (min-width: 1200px) {
+                width: 358px;
+                margin: 0;
+            }
         }
 
         button {
