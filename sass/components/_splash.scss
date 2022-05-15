@@ -13,6 +13,17 @@
     text-align: center;
     margin: 0 auto;
 
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(/images/header-background@2x.jpg);
+    }
+
+    @media (min-width: 1200px) {
+        height: 600px;
+    }
+
     &:after {
         content: "";
         position: absolute;
@@ -30,5 +41,10 @@
         max-width: 390px;
         letter-spacing: 0.06em;
         z-index: 2;
+
+        @media (min-width: 1200px) {
+            font-size: 44px;
+            max-width: 700px;
+        }
     }
 }
